@@ -1,1 +1,1 @@
-game.Payers.LocalPlayer:Kick()
+game.Players.LocalPlayer:Kick()
