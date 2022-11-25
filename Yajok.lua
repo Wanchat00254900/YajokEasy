@@ -7,7 +7,9 @@ for i,v in pairs(game.Players:children()) do
 	
 	if not table.find(Bans,v.Name) then
 		
-		v:Kick("You Are Banned")
+	else
+	
+	v:Kick("You Are Banned")
 		
 	end
 	
