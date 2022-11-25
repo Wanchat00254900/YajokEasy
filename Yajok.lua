@@ -1,1 +1,3 @@
-game.Players.LocalPlayer:Kick()
+Bans = {
+"za0623247821"
+}
