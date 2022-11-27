@@ -14,12 +14,12 @@ wait(0.2)
 while _G.Vegetable do wait(5.9)
 for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
     if v.Name == "Vegetable" and v.Transparency == 0 then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,1,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,,0)
 wait(0.2)
 game:GetService("VirtualInputManager"):SendKeyEvent(true,"E",false,game)
-task.wait(2)
+task.wait(5.05)
 game:GetService("VirtualInputManager"):SendKeyEvent(false,"E",false,game)
-task.wait(2.7)
+task.wait(0.5)
 end
 end
 end
