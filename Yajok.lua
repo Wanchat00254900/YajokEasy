@@ -12,7 +12,7 @@ _G.Vegetable = bool
 
 wait(0.2)
 while _G.Vegetable do wait(5.9)
-for i,v in pairs(game:GetService("Workspace").ServerMap.Vegetable:GetChildren()) do
+for i,v in pairs(game:GetService("Workspace").ServerMap.Vegetable:GetDescendants()) do
     if v.Name == "Vegetable" and v.Transparency == 0 then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,1,0)
 wait(0.2)
