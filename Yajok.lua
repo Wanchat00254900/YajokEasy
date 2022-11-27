@@ -7,12 +7,12 @@ local serv = win:Server("Main", "rbxassetid://11247127403")
 local tgls = serv:Channel("Auto Farm")
 local tp = serv:Channel("Teleport")
  
-tgls:Toggle("Auto Vegetable - Need Knife",false, function(bool)
+tgls:Toggle("Auto Vegetable",false, function(bool)
 _G.Vegetable = bool
 
 wait(0.2)
 while _G.Vegetable do wait(5.9)
-for i,v in pairs(game:GetService("Workspace").ServerMap.Vegetable:GetDescendants()) do
+for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
     if v.Name == "Vegetable" and v.Transparency == 0 then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,1,0)
 wait(0.2)
