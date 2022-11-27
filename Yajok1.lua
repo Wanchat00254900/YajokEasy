@@ -9,7 +9,7 @@ local tp = serv:Channel("Teleport")
  
 tgls:Toggle("Auto Vegetable",false, function(bool)
 _G.Vegetable = bool
-game.Players.LocalPlayers.ITEM.Chack.Value = true
+game.Players.LocalPlayer.ITEM.Chack.Value = true
 wait(0.2)
 while _G.Vegetable do wait(5.9)
 for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
